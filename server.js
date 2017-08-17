@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
-var app = express();
+var app = express(); 
 app.use(morgan('combined'));
 
 var articalOne = {
@@ -67,9 +67,9 @@ app.get('/artical-one', function (req, res) {
 });
 
 
-app.get('/artical-two', function (req, res) {
+/*app.get('/artical-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'artical-two.html'));
-});
+});*/
 
 
 app.get('/ui/style.css', function (req, res) {
