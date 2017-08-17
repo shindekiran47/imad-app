@@ -5,12 +5,68 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articalOne = {
+    title: 'artical-one',
+    heading: 'Artical one',
+    date: 'sep 5 2015',
+    content: `
+            <p>
+                this is artical one  this is artical one this is artical one this is artical 
+                one this is artical one one this is artical oneone this is artical oneone this is artical one
+            </p>
+               
+            <p>
+                this is artical one  this is artical one this is artical one this is artical 
+                one this is artical one one this is artical oneone this is artical oneone this is artical one
+            </p>`
+    };
+
+function createTemplate (data) {
+        var title = data.title;
+        var date = data.date;
+        var heading = heading.data;
+        var content = content.data;
+
+        var htmlTemplate = `
+<html>
+    <head>
+        <title> 
+        ${title}
+        </title>
+        <meta name="viewport" containt="width=device=width, intial-scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        
+    <body>
+    <div class="container" >
+        <div>
+        <a href= "/"> HOME</a> 
+        </div>
+        <hr/>
+        
+        <h3>
+            ${heading}
+        </h3>
+        <hr/>
+        <div>
+            ${date}
+        </div>
+        <div>
+            ${content}
+        </div>
+    </div>
+    </body>
+</html>
+`;
+return htmlTemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/artical-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'artical-one.html'));
+ res.send(createTamplate(articalOne));
 });
 
 
