@@ -31,23 +31,21 @@ function createTemplate (data) {
 <html>
     <head>
         <title> 
-        ${title}
+            ${title}
         </title>
         <meta name="viewport" containt="width=device=width, intial-scale=1" />
         <link href="/ui/style.css" rel="stylesheet" />
-        </head>
-        
+    </head>
     <body>
     <div class="container" >
-        <div>
-        <a href= "/"> HOME</a> 
-        </div>
+            <div>
+                <a href= "/"> HOME</a> 
+            </div>
         <hr/>
         
         <h3>
             ${heading}
         </h3>
-        <hr/>
         <div>
             ${date}
         </div>
@@ -56,7 +54,7 @@ function createTemplate (data) {
         </div>
     </div>
     </body>
-</html>
+</html> 
 `;
 return htmlTemplate;
 }
