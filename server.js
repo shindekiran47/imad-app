@@ -24,8 +24,8 @@ var articalOne = {
 function createTemplate (data) {
         var title = data.title;
         var date = data.date;
-        var heading = heading.data;
-        var content = content.data;
+        var heading = data.heading;
+        var content = data.content;
 
         var htmlTemplate = `
 <html>
@@ -42,7 +42,6 @@ function createTemplate (data) {
                 <a href= "/"> HOME</a> 
             </div>
         <hr/>
-        
         <h3>
             ${heading}
         </h3>
