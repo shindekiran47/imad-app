@@ -12,7 +12,7 @@ var articals = {
     date: 'sep 5 2015',
     content: `
             <p>
-                this is artical one  this is artical one this is artical one this is artical 
+                is artical one this is artical 
                 one this is artical one one this is artical oneone this is artical oneone this is artical one
             </p>
                
@@ -26,27 +26,22 @@ var articals = {
     date: 'may 5 2017',
     content: `
             <p>
-                this is artical one  this is artical one this is artical one this is artical 
-                one this is artical one one this is artical oneone this is artical oneone this is artical one
+                this is artical two
             </p>
                
             <p>
-                this is artical one  this is artical one this is artical one this is artical 
-                one this is artical one one this is artical oneone this is artical oneone this is artical one
+                this is artical one  this is s is artical oneone this is artical oneone this is artical one
             </p>`},
     'artical-three' : { title: 'artical-Three',
     heading: 'Artical three',
     date: 'jan 6 2017',
     content: `
             <p>
-                this is artical one  this is artical one this is artical one this is artical 
+                this is artical Three  this is artical one this is artical one this is artical 
                 one this is artical one one this is artical oneone this is artical oneone this is artical one
-            </p>
+            </p>`
                
-            <p>
-                this is artical one  this is artical one this is artical one this is artical 
-                one this is artical one one this is artical oneone this is artical oneone this is artical one
-            </p>`}
+            }
 };
 
 function createTemplate (data) {
