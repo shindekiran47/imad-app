@@ -5,10 +5,12 @@ var button = document.getElementById('counter');
 var counter = 0;
 button.onclick = function () {
   
+  /*
   //for counter only
-  counter = counter + 1;
+   counter = counter + 1;
   var span = document.getElementById('count');
-  span.innerHTML = counter.toString();
+  span.innerHTML = counter.toString(); 
+  */
   
   //create a request object
   var request = new XMLHttpRequest();
