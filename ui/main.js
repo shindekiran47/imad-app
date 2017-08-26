@@ -10,7 +10,7 @@ button.onclick = function () {
   var span = document.getElementById('count');
   span.innerHTML = counter.toString();
   
-/*  //create a request object
+  //create a request object
   var request = new XMLHttpRequest();
   
   //capure the response and store it in a variable
@@ -29,6 +29,6 @@ button.onclick = function () {
     // make a request
     request.open('GET', 'http://jackyshinde47.imad.hasura-app.io/counter', true);
     request.send(null);
-*/
+
   
 };
