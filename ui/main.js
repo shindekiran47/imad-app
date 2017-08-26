@@ -7,10 +7,10 @@ button.onclick = function () {
   
   
   //for counter only
-   counter = counter + 1;
+  counter = counter + 1;
   var span = document.getElementById('count');
   span.innerHTML = counter.toString(); 
-  
+};
   /*
   //create a request object
   var request = new XMLHttpRequest();
@@ -33,4 +33,4 @@ button.onclick = function () {
     request.send(null);
 */
   
-};
+
