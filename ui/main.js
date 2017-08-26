@@ -3,11 +3,11 @@
 //counter code
 var button = document.getElementById('counter');
 var counter = 0;
+
 button.onclick = function () {
   
-  
   //for counter only
-  counter = counter + 1;
+  counter = counter + 10;
   var span = document.getElementById('count');
   span.innerHTML = counter.toString(); 
 };
